@@ -1,7 +1,7 @@
 name: Monitor CBF
 on:
   schedule:
-    - cron: '0 * * * *' # Roda a cada hora cheia
+    - cron: '*/30 * * * *' # Roda a cada meia hora
   workflow_dispatch: # Permite rodar manualmente para testar
 
 jobs:
