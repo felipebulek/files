@@ -1,0 +1,43 @@
+{
+  "apiBase": "https://cms.cbf.com.br/api",
+  "siteBase": "https://www.cbf.com.br",
+  "documentsPageUrl": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Tabela%20Detalhada",
+  "competitionLabel": "Brasileirao Serie A",
+
+  "pdf": {
+    "enabled": true,
+    "searchTerm": "Tabela Detalhada",
+    "pageSize": 60,
+    "mustMatch": [
+      "(?i)tabela\\s*detalhada",
+      "(?i)(\\bBSA\\b|s[eé]rie\\s*a\\b)"
+    ],
+    "mustNotMatch": [
+      "(?i)feminino",
+      "(?i)sub-?\\s*\\d",
+      "(?i)s[eé]rie\\s*a[123]\\b",
+      "(?i)s[eé]rie\\s*[bcd]\\b",
+      "(?i)copa\\s+do\\s+(brasil|nordeste)"
+    ]
+  },
+
+  "news": {
+    "enabled": true,
+    "categorySlug": "noticias-campeonato-brasileiro-serie-a",
+    "pageSize": 25,
+    "mustMatch": [
+      "(?i)detalha",
+      "(?i)(rodada|tabela)"
+    ],
+    "mustNotMatch": []
+  },
+
+  "state": {
+    "maxRemembered": 400
+  },
+
+  "telegram": {
+    "apiBase": "https://api.telegram.org",
+    "disableWebPagePreview": false
+  }
+}
